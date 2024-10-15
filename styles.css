@@ -1,0 +1,103 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: pink;
+}
+
+header {
+    width: 100%;
+    background-color: aqua;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    width: 60%;
+    background-color: purple;
+    height: 80vh;
+}
+
+aside {
+    width: 25%;
+    height: 80vh;
+}
+
+.left {
+    background-color: palevioletred;
+    height: 80vh;
+}
+
+.right {
+    background-color: aquamarine;
+    height: 80vh;
+}
+
+.site-footer {
+    width: 100%;
+    background-color: greenyellow;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    main{
+        flex-wrap: wrap;
+    }
+    
+    .center {
+        order: -1;
+        width: 100%;
+        height: 40vh;
+    }
+
+    .left, .right {
+        width: 50%;
+        height: 40vh;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .center-section {
+        flex-direction: column;
+    }
+
+    header {
+        height: 20vh;
+    }
+
+    .center {
+        order: -1;
+        width: 100%;;
+        height: 20vh;
+    }
+
+    .left, .right {
+        width: 100%;;
+        height: 20vh;
+        flex-direction: row;
+    }
+
+    .site-footer {
+        width: 100%;;
+        height: 20vh;
+    }
+
+}
