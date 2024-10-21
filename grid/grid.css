@@ -37,26 +37,26 @@ tudo .main-content{
 .tudo  .main-content {
     grid-area:main-content;
     background:#fff;
-    height: 43rem;
+    height: 50rem;
 
 }
 
 .tudo  .left-sidebar {
     grid-area: left-sidebar;
-    background:#2faa96;
-    height: 43rem;
+    background:#792faa;
+    height: 50rem;
 
 }
 .tudo  .right-sidebar {
     grid-area:right-sidebar;
-    background:#a6fff3;
-    height: 43rem;
+    background:#00e1ff;
+    height: 50rem;
 
 
 }
 .tudo  .footer {
     grid-area:footer;
-    background:#72c2f1;
+    background:#0011ff;
     height: 8rem;
 
 
